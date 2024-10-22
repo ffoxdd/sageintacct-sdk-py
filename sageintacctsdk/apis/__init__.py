@@ -33,6 +33,7 @@ from .tax_details import TaxDetails
 from .gl_detail import GLDetail
 from .classes import Classes
 from .journal_entries import JournalEntries
+from .journal_entry_lines import JournalEntryLines
 from .revenue_recognition_schedules import RevRecSchedules
 from .revenue_recognition_schedule_entries import RevRecScheduleEntries
 from .cost_types import CostTypes
@@ -74,6 +75,7 @@ __all__ = [
     'GLDetail',
     'Classes',
     'JournalEntries',
+    'JournalEntryLines',
     'RevRecSchedules',
     'RevRecScheduleEntries',
     'CostTypes',

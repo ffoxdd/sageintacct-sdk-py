@@ -650,6 +650,23 @@ dimensions_fields_mapping = {
         'STATE',
         'TAXSOLUTIONID'
     ],
+    'GLENTRY': [
+        'RECORDNO',
+        'BATCHNO',
+        'USERNO',
+        'LINE_NO',
+        'TR_TYPE',
+        'ENTRY_DATE',
+        'AMOUNT',
+        'TRX_AMOUNT',
+        'BATCH_NUMBER',
+        'BATCH_DATE',
+        'BATCHTITLE',
+        'ACCOUNTKEY',
+        'ACCOUNTNO',
+        'ACCOUNTTITLE',
+        'STATISTICAL',
+    ],
     'REVRECSCHEDULE': [
         'RECORDNO',
         'REVRECTEMPLATEKEY',

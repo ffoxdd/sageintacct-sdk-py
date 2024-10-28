@@ -776,5 +776,14 @@ dimensions_fields_mapping = {
         'WHENMODIFIED',
         'CREATEDBY',
         'MODIFIEDBY'
+    ],
+    'REPORTINGPERIOD': [
+        'NAME',
+        'HEADER1',
+        'HEADER2',
+        'START_DATE',
+        'END_DATE',
+        'BUDGETING',
+        'STATUS',
     ]
 }

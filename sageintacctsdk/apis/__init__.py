@@ -41,6 +41,7 @@ from .order_entry_transactions import OrderEntryTransactions
 from .allocation_entry import AllocationEntry
 from .allocations import Allocations
 from .reporting_periods import ReportingPeriods
+from .account_balances import AccountBalances
 
 __all__ = [
     'ApiBase',
@@ -82,5 +83,6 @@ __all__ = [
     'CostTypes',
     'OrderEntryTransactions',
     'Allocations',
-    'ReportingPeriods'
+    'ReportingPeriods',
+    'AccountBalances',
 ]

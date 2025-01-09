@@ -6,7 +6,7 @@ from .apis import ApiBase, Contacts, Contracts, Locations, Employees, Accounts, 
     APPayments, Reimbursements, CheckingAccounts, SavingsAccounts, Tasks, ExpensePaymentTypes, Dimensions,\
     DimensionValues, LocationEntities, ARInvoices, ARPayments, TaxDetails, GLDetail, Classes, JournalEntries,\
     JournalEntryLines, RevRecSchedules, RevRecScheduleEntries, CostTypes, OrderEntryTransactions, Allocations,\
-    AllocationEntry, ReportingPeriods
+    AllocationEntry, ReportingPeriods, AccountBalances
 
 
 class SageIntacctSDK:
@@ -75,6 +75,7 @@ class SageIntacctSDK:
         self.order_entry_transactions = OrderEntryTransactions()
         self.allocations = Allocations()
         self.reporting_periods = ReportingPeriods()
+        self.account_balances = AccountBalances()
         self.update_sender_id()
         self.update_sender_password()
         self.update_session_id()
@@ -124,6 +125,7 @@ class SageIntacctSDK:
         self.allocation_entry.set_sender_id(self.__sender_id)
         self.allocations.set_sender_id(self.__sender_id)
         self.reporting_periods.set_sender_id(self.__sender_id)
+        self.account_balances.set_sender_id(self.__sender_id)
 
     def update_sender_password(self):
         """
@@ -169,6 +171,7 @@ class SageIntacctSDK:
         self.allocation_entry.set_sender_password(self.__sender_password)
         self.allocations.set_sender_password(self.__sender_password)
         self.reporting_periods.set_sender_password(self.__sender_password)
+        self.account_balances.set_sender_password(self.__sender_password)
 
     def update_session_id(self):
         """
@@ -216,6 +219,7 @@ class SageIntacctSDK:
         self.allocation_entry.set_session_id(self.__session_id)
         self.allocations.set_session_id(self.__session_id)
         self.reporting_periods.set_session_id(self.__session_id)
+        self.account_balances.set_session_id(self.__session_id)
 
     def update_show_private(self):
         """
@@ -261,3 +265,4 @@ class SageIntacctSDK:
         self.allocation_entry.set_show_private(self.__show_private)
         self.allocations.set_show_private(self.__show_private)
         self.reporting_periods.set_show_private(self.__show_private)
+        self.account_balances.set_show_private(self.__show_private)
